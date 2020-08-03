@@ -1,0 +1,47 @@
+[root@kafka1 bin]# ./kafka-producer-perf-test.sh --topic test_perf --num-records 1000000 --record-size 200000  --throughput 10000 --producer-props bootstrap.servers=10.223.40.85:9092,10.223.40.86:9092,10.223.40.87:9092 
+1595 records sent, 315.7 records/sec (60.21 MB/sec), 404.1 ms avg latency, 1779.0 max latency.
+370 records sent, 72.2 records/sec (13.77 MB/sec), 1531.4 ms avg latency, 5224.0 max latency.
+250 records sent, 49.6 records/sec (9.46 MB/sec), 1472.9 ms avg latency, 8209.0 max latency.
+790 records sent, 157.9 records/sec (30.12 MB/sec), 2092.5 ms avg latency, 11236.0 max latency.
+1050 records sent, 209.7 records/sec (40.00 MB/sec), 515.7 ms avg latency, 3917.0 max latency.
+424 records sent, 83.2 records/sec (15.86 MB/sec), 1417.0 ms avg latency, 5276.0 max latency.
+186 records sent, 32.2 records/sec (6.15 MB/sec), 4289.2 ms avg latency, 8945.0 max latency.
+270 records sent, 50.7 records/sec (9.68 MB/sec), 3953.5 ms avg latency, 8694.0 max latency.
+1325 records sent, 260.1 records/sec (49.61 MB/sec), 913.6 ms avg latency, 7426.0 max latency.
+530 records sent, 87.4 records/sec (16.66 MB/sec), 1340.9 ms avg latency, 3572.0 max latency.
+277 records sent, 55.1 records/sec (10.50 MB/sec), 3843.1 ms avg latency, 7278.0 max latency.
+230 records sent, 45.0 records/sec (8.58 MB/sec), 2013.2 ms avg latency, 8311.0 max latency.
+345 records sent, 64.6 records/sec (12.31 MB/sec), 3363.7 ms avg latency, 9305.0 max latency.
+1463 records sent, 292.4 records/sec (55.78 MB/sec), 614.0 ms avg latency, 6758.0 max latency.
+395 records sent, 74.9 records/sec (14.28 MB/sec), 2189.0 ms avg latency, 4774.0 max latency.
+275 records sent, 55.0 records/sec (10.48 MB/sec), 3181.6 ms avg latency, 6303.0 max latency.
+^C^C^C^C^C^C[root@kafka1 bin]# ^C
+[root@kafka1 bin]# ^C
+[root@kafka1 bin]# ^C
+[root@kafka1 bin]# ./kafka-producer-perf-test.sh --topic test_perf --num-records 1000000 --record-size 100000  --throughput 10000 --producer-props bootstrap.servers=10.223.40.85:9092,10.223.40.86:9092,10.223.40.87:9092
+3051 records sent, 561.9 records/sec (53.58 MB/sec), 409.8 ms avg latency, 1423.0 max latency.
+856 records sent, 149.5 records/sec (14.26 MB/sec), 1315.8 ms avg latency, 5760.0 max latency.
+677 records sent, 106.8 records/sec (10.19 MB/sec), 3529.7 ms avg latency, 7630.0 max latency.
+1045 records sent, 208.1 records/sec (19.85 MB/sec), 1858.5 ms avg latency, 6224.0 max latency.
+915 records sent, 177.6 records/sec (16.94 MB/sec), 1522.6 ms avg latency, 6390.0 max latency.
+675 records sent, 134.4 records/sec (12.82 MB/sec), 2116.3 ms avg latency, 7715.0 max latency.
+980 records sent, 178.9 records/sec (17.06 MB/sec), 1977.9 ms avg latency, 7158.0 max latency.
+290 records sent, 56.3 records/sec (5.37 MB/sec), 3853.6 ms avg latency, 9310.0 max latency.
+600 records sent, 117.1 records/sec (11.16 MB/sec), 4113.4 ms avg latency, 11634.0 max latency.
+510 records sent, 99.7 records/sec (9.51 MB/sec), 3291.4 ms avg latency, 8076.0 max latency.
+3400 records sent, 672.6 records/sec (64.14 MB/sec), 646.2 ms avg latency, 6007.0 max latency.
+730 records sent, 129.5 records/sec (12.35 MB/sec), 1503.7 ms avg latency, 6804.0 max latency.
+420 records sent, 80.4 records/sec (7.67 MB/sec), 3162.5 ms avg latency, 9200.0 max latency.
+^C^C^C^C^C^C^C^C^C^
+[root@kafka1 bin]# 
+[root@kafka1 bin]# 
+[root@kafka1 bin]# 
+[root@kafka1 bin]# ./kafka-producer-perf-test.sh --topic test_perf --num-records 1000000 --record-size 200000  --throughput 3600 --producer-props bootstrap.servers=10.223.40.85:9092,10.223.40.86:9092,10.223.40.87:9092 
+1730 records sent, 342.8 records/sec (65.39 MB/sec), 330.5 ms avg latency, 1748.0 max latency.
+370 records sent, 62.2 records/sec (11.85 MB/sec), 1589.3 ms avg latency, 6755.0 max latency.
+200 records sent, 33.9 records/sec (6.47 MB/sec), 4639.0 ms avg latency, 9320.0 max latency.
+260 records sent, 46.7 records/sec (8.92 MB/sec), 3754.4 ms avg latency, 9297.0 max latency.
+1303 records sent, 250.9 records/sec (47.85 MB/sec), 1065.1 ms avg latency, 8274.0 max latency.
+120 records sent, 22.1 records/sec (4.22 MB/sec), 820.6 ms avg latency, 6236.0 max latency.
+115 records sent, 21.3 records/sec (4.07 MB/sec), 3919.7 ms avg latency, 11405.0 max latency.
+280 records sent, 53.0 records/sec (10.11 MB/sec), 6178.9 ms avg latency, 15365.0 max latency
